@@ -940,7 +940,14 @@ footer > p{
     }
     header aside#shoppingBag fieldset:nth-of-type(2) legend{
         position: fixed;
-        top: 0;
+        top: 0px;
+        line-height: 25vw;
+        background-color: rgba(255,255,255,0.8);
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend button{
+        position: fixed;
+        right: 3.57%;
+        top: 8vw;
     }
     header aside#shoppingBag fieldset:nth-of-type(2) legend + ul{
         margin-top: 20vw;
