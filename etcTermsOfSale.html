@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of sale</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/cartier.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="onTheTop">
+        <div class="asideContainer">
+            <aside class="sideBar" id="login">
+                <h2>
+                    Account
+                    <button class="material-icons sideClose">close</button>
+                </h2>
+                <form>
+                    <fieldset>
+                        <legend>Welcome
+                            <input type="button" class="sideOpen" value="Create an account" data-popName="createAnAccount">
+                        </legend>
+                        <p class="inputStatus">Insert your Email and password</p>
+                        <ul class="inputContainer">
+                            <li class="inputList">
+                                <input type="text" title="user email" id="userEmail" class="customInput">
+                                <label for="userEmail">Email</label>
+                            </li>
+                            <li class="inputList">
+                                <input type="password" title="user password" id="userPassword" class="customInput">
+                                <label for="userPassword">Password</label>
+                                <input type="button" class="sideOpen customInput" value="I forgot" data-popName="forgotPassword">
+                            </li>
+                        </ul>
+                        <input type="submit" value="LOGIN" class="active btnConfirm" id="runLogin">
+                    </fieldset>
+                </form>
+            </aside>
+            <!-- ? popup Login -->
+        
+            <aside class="sideBar" id="forgotPassword">
+                <h2>
+                    Account
+                    <button class="material-icons sideClose">close</button>
+                </h2>
+                <form>
+                    <fieldset>
+                        <legend>Password reset<input type="button" class="sideOpen selfDeactive" value="Back to login" data-popName="login"></legend>
+                        <p>Confirm your email</p>
+                        <ul class="inputContainer">
+                            <li class="inputList">
+                                <input type="text" title="email input" id="email_confirm" class="customInput">
+                                <label for="email_confirm">Email</label>
+                            </li>
+                        </ul>
+                        <a href="index.html" class="active btnConfirm">RESET PASSWORD</a>
+                    </fieldset>
+                </form>
+            </aside>
+            <!-- ? popup forgotPassword -->
+        
+            <aside class="sideBar" id="createAnAccount">
+                <h2>
+                    Account
+                    <button class="material-icons sideClose">close</button>
+                </h2>
+                <form>
+                    <fieldset>
+                        <legend>Welcome<input type="button" class="sideOpen selfDeactive" value="Back to login"></legend>
+                        <p>Create your account below.</p>
+                        <ul class="inputContainer">
+                            <li class="inputList nonBg">
+                                <input type="text" title="confirm email" id="email_input" class="customInput">
+                                <label for="email_input">Email</label>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="password" title="password input" id="password_input" class="customInput">
+                                <label for="password_input">Password</label>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="password" title="password confirm" id="password_confirm" class="customInput">
+                                <label for="password_confirm">Confirm password</label>
+                            </li>
+                            <li class="inputList">
+                                <input type="text" title="First name" id="firstName" class="customInput">
+                                <label for="firstName">First name</label>
+                            </li>
+                            <li class="inputList">
+                                <input type="text" title="Last name" id="lastName" class="customInput">
+                                <label for="lastName">Last name</label>
+                            </li>
+                            <li class="inputList">
+                                <input type="checkbox" id="btn_newsletter">
+                                <label for="btn_newsletter" class="checkLabel">Subscibe to newsletter</label>
+                            </li>
+                        </ul>
+                        <input type="button" value="REGISTER" class="active btnConfirm selfDeactive" id="callLogin">
+                        <p>By creating an account, you accept our Terms and Conditions and confirm that you have read our Privacy Policy.</p>
+                    </fieldset>
+                </form>
+            </aside>
+            <!-- ? popup Create an account -->
+        
+            <aside class="sideBar" id="myPage">
+                <button class="material-icons sideClose">close</button>
+                <h2>
+                    Hello, Yoonjin.
+                    <a href="index.html">Logout</a>
+                </h2>
+                <div>
+                    <h3>Quick access</h3>
+                    <a href="etcMyPage1.html">Order History</a>
+                    <a href="etcMyPage3.html">Addresses</a>
+                    <a href="etcMyPage4.html">Wish List</a>
+                </div>
+                <a href="etcMyPage1.html" class="btnConfirm">ACCOUNT</a>
+            </aside>
+            <!-- ? popup My account -->
+        
+            <aside class="sideBar" id="shoppingBag">
+                <form>
+                    <fieldset id="checkoutContainer">
+                        <legend>Recipient</legend>
+                        <div>
+                            Customer Service
+                            <a href="tel:+8215667277">call</a>
+                            <a href="mailto:contact.korea@cartier.com">email</a>
+                        </div>
+                        <p>In order to receive the product safely, please fill in the correct address and contact information, and if possible, please place an order at an address where you can receive the product directly.</p>
+                        <ul class="inputContainer">
+                            <li class="inputList">
+                                <input type="text" title="First name" id="checkFirstName" class="customInput">
+                                <label for="checkFirstName">First name</label>
+                            </li>
+                            <li class="inputList">
+                                <input type="text" title="Last name" id="checkLastName" class="customInput">
+                                <label for="checkLastName">Last name</label>
+                            </li>
+                            <li>
+                                <p>Click the 'Find Postal Code' button to enter the address.</p>
+                                <button class="btnConfirm">FIND POSTAL CODE</button>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="text" title="Zipcode" id="zipCode" class="customInput">
+                                <label for="zipCode">Zipcode</label>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="text" title="Address" id="address" class="customInput">
+                                <label for="address">Address</label>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="text" title="Detailed address" id="detailedAddress" class="customInput">
+                                <label for="detailedAddress">Detailed Address</label>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="text" title="Address Alias" id="addressAlias" class="customInput">
+                                <label for="addressAlias">Address Alias</label>
+                            </li>
+                            <li class="inputList">
+                                <strong>Sender</strong>
+                                <input type="checkbox" title="Sender" id="sender">
+                                <label for="sender" class="checkLabel">Enter this sender address. (If the receiver and sender are different, please enter them.)</label>
+                            </li>
+                            <li>
+                                <strong>Contact</strong>
+                                <p>You will be directed to the contact information you entered regarding product orders.</p>
+                            </li>
+                            <li class="inputList">
+                                <input type="text" title="Cell Phone Number" id="phoneNumb" class="customInput">
+                                <label for="phoneNumb">Cell Phone Number</label>
+                            </li>
+                            <li>
+                                <strong>Shipping Information</strong>
+                                <p>Cartier offers safe and free shipping on all orders.</p>
+                                <p>All products sold through Cartier Online Boutique are safely delivered to customers through post office delivery and Valex. Orders less than KRW 5 million will be delivered by post office delivery, and orders over KRW 5 million can be delivered safely through Valex. After ordering, please check the expected arrival date once more.</p>
+                            </li>
+                        </ul>
+                        <input type="submit" value="DELIVERY" class="compelete">
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Order Summary
+                            <button class="material-icons sideClose">close</button>
+                        </legend>
+                        <ul>
+                            <li>
+                                <label for="productPrice"><span>2</span> items</label>
+                                <input type="text" id="productPrice" value="9 780 000" readonly><span>KRW</span>
+                            </li>
+                            <li>
+                                <label for="shippingPrice">shipping</label>
+                                <input type="text" id="shippingPrice" value="Calculated at checkout" readonly>
+                            </li>
+                            <li>
+                                <label for="totalPrice">TOTAL</label>
+                                <input type="text" id="totalPrice" value="9 780 000" readonly><span>KRW</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="images/shoppingBag_1.png" alt="shopping bag list 1">
+                                    <figcaption>
+                                        <a href="detail_ring1.html"></a>
+                                        <button class="removeBtn">Remove</button>
+                                        <dl>
+                                            <dt>1895 Wedding Band</dt>
+                                            <dd>Pink Gold</dd>
+                                        </dl>
+                                        <ul class="outputContainer">
+                                            <li class="selectList">
+                                                <select>
+                                                    <option value="47">47 size</option>
+                                                </select>
+                                            </li>
+                                            <li class="selectList">
+                                                <select>
+                                                    <option value="Qty1">Qty 1</option>
+                                                </select>
+                                            </li>
+                                            <li class="inputList">
+                                                <input type="text" id="productPrice1" value="1 130 000" readonly><span>KRW</span>
+                                            </li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="images/shoppingBag_2.png" alt="shopping bag list 2">
+                                    <figcaption>
+                                        <a href="detail_bracelet1.html"></a>
+                                        <button>Remove</button>
+                                        <dl>
+                                            <dt>Love Bracelet</dt>
+                                            <dd>Pink Gold</dd>
+                                        </dl>
+                                        <ul class="outputContainer">
+                                            <li class="selectList">
+                                                <select name="sizeSelect">
+                                                    <option value="oneSize">One size</option>
+                                                </select>
+                                            </li>
+                                            <li class="selectList">
+                                                <select name="qtySelect">
+                                                    <option value="Qty1">Qty 1</option>
+                                                </select>
+                                            </li>
+                                            <li class="inputList">
+                                                <input type="text" id="productPrice2" value="8 650 000" readonly><span>KRW</span>
+                                            </li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        <input type="button" value="CHECKOUT" class="btnConfirm btnCheckOut">
+                    </fieldset>
+                </form>
+            </aside>
+            <!-- ? popup ShoppingBag -->
+        
+            <aside class="sideBar" id="search">
+                <h2>
+                    Search
+                    <button class="material-icons sideClose">close</button>
+                </h2>
+                <form>
+                    <fieldset>
+                        <input type="search" id="searchBar" placeholder="Search here..." list="searchFilter">
+                        <datalist id="searchFilter">
+                            <option value="Ring">Ring</option>
+                            <option value="Bracelet">Bracelet</option>
+                            <option value="Necklace">Necklace</option>
+                            <option value="Earring">Earring</option>
+                            <option value="Watch">Watch</option>
+                        </datalist>
+                    </fieldset>
+                    <div class="searchSuggestions">
+                        <h3>Suggestions</h3>
+                        <a href="list_ring.html">Ring</a>
+                        <a href="list_necklace.html">Necklace</a>
+                    </div>
+                </form>
+            </aside>
+            <!-- ? popup search -->  
+        </div>
+
+        <h1>
+            <a href="index_after.html">
+                cartier
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="list_ring.html">Ring</a></li>
+                <li><a href="list_bracelet.html">Bracelet</a></li>
+                <li><a href="list_necklace.html">Necklace</a></li>
+                <li><a href="list_earring.html">Earring</a></li>
+                <li><a href="list_watch.html">Watch</a></li>
+            </ul>
+        </nav>
+        <div class="status signIn">
+            <a href="#" class="hamburger">
+                <span></span>
+                <span></span>
+            </a>
+            <button class="sideOpen" data-popName="myPage">My Account</button>
+            <a href="etcMyPage4.html" class="pass">Wish List</a>
+            <button class="sideOpen pass" data-popName="shoppingBag">Shopping Bag</button>
+            <span>+99</span>
+            <button class="sideOpen pass material-icons" data-popName="search">search</button>
+        </div>
+    </header>
+    <!-- ? header Fin -->
+
+    <aside class="etcSideBar">
+        <h2>
+            Legal and cookies
+        </h2>
+        <ul>
+            <li>
+                <a href="etcTermsOfUse.html">Terms of use</a>
+            </li>
+            <li>
+                <a href="etcPrivacyPolicy.html"">Privacy policy</a>
+            </li>
+            <li class="active">
+                <a href="etcTermsOfSale.html">Terms of sale</a>
+            </li>
+        </ul>
+    </aside>
+    <section class="etcContainer etcTermsOfSale">
+        <h3>Terms of sale</h3>
+        <ul>
+            <li>
+                <time datetime="2021-08-11">Last updated on: August 11, 2021</time>
+                <span>About Cartier and these Terms of Sale</span>
+                <p>These Terms and Conditions of Sale apply to you from Richemont Korea Ltd. on the www.cartier.co.kr website and related mobile or digital apps under these Terms of Sale (collectively, the “ Platform ”) or our Customer Center. (“ Contact Center ”) applies to the sale of any Cartier product or service ordered over the phone.</p>
+                <p>Richmont Korea Co., Ltd. is headquartered in Namsan, State Tower, 100 Toegye-ro, Jung-gu, Seoul, Republic of Korea (Postal Code: 04631) (Cartier and “ our company ”, “ our ” and “ our ”). Our business registration number is 102-81-41 612. Our Fair Trade Commission mail-order business report form (including mail-order business operator number) can be found at the link . For more information about our escrow service, please refer to the link .</p>
+                <p>Richmont Korea Co., Ltd. is an affiliate of Cartier International AG, which owns and manages the platform in accordance with the terms and conditions of use . In addition, Richmont Korea Co., Ltd. is responsible for information collection in accordance with the Privacy Policy . By placing an order, you agree to be bound by the terms of use and privacy policy contained in these Terms of Sale .</p>
+                <p>PLEASE READ THESE TERMS OF SALE CAREFULLY. These Terms of Sale apply to all orders placed through the Platform or Contact Center (collectively, “Sales Channels”). Prior to ordering any product or service, you will be asked to accept these Terms of Sale. If you do not agree to these Terms of Sale, you may not order products or services through the Sales Channels. These Terms of Sale do not apply to purchases made through offline retailers (eg our offline boutiques) or third parties (eg authorized retailers).</p>
+            </li>
+            <li>
+                <h4>1. Amendments to these terms of sale</h4>
+                These Terms of Sale may be amended from time to time, so we encourage you to check these Terms of Sale regularly for updated information. The most current version of these Terms of Sale is available on the Platform at any time. The amended Terms of Sale will become effective immediately upon posting and will apply to all orders for products or services placed thereon. Any changes to these Terms of Sale after you place an order will not affect your prior order or your relationship with us, except as required by law.
+            </li>
+            <li>
+                <h4>2. Purchase eligibility</h4>
+                <p>(a) at least the legal age to enter into a contract (19 years old in Korea); Only individuals who use can order through sales channels (corporates cannot order). If you are a minor or do not have the capacity to enter into contracts, you must have a parent or guardian place the order on your behalf, and the parent or guardian must agree to these Terms of Sale.</p>
+                <p>By placing an order through a sales channel, you are the end-consumer who has purchased the ordered goods or services for your own or others' personal use, and you will not offer, sell or otherwise distribute our products to us for commercial purposes. You represent and warrant that you are not purchasing any product or service.</p>
+            </li>
+            <li>
+                <h4>3. Product inventory and quantity</h4>
+                <p>All orders through our sales channels are subject to availability and acceptance of orders by us. Cartier reserves the right to change the composition of products offered through the platform or contact center, and may limit the number of Cartier products that you can purchase at any one time without prior notice. In addition, Cartier reserves the right to reject orders in excess of a certain quantity for a particular product at any time without prior notice. Currently, you can order up to five products at a time when placing an order through the platform or contact center. Please note that only products marked “Add to Cart” can be purchased through the platform. You can check product availability from a Cartier Ambassador by calling the Cartier Contact Center (1566-7277) and receive assistance with the purchase process.</p>
+                <p>You can find information about products currently available for purchase through these channels on the contact center and product pages on the platform.</p>
+                <p>For additional information on the ordering process , please see section 6. Ordering Process below .</p>
+            </li>
+            <li>
+                <h4>4. Account resistration and non-member order (guest checkout)</h4>
+                <p>To place an order through the Platform, you or a Cartier Ambassador (on your behalf) can either open and register an online boutique account on the Platform, or order as a non-member without opening an online boutique account by selecting “Non-Member Order”. In order to open a platform account, you must provide valid and up-to-date personal information such as your legal name, phone number and email address, and confirm that you are of the age of majority.</p>
+                <p>If you select “Non-Member Order”, you can create a Cartier Online Boutique Account upon receipt of your order and delivery confirmation. Please note that in this case the purchase information prior to account registration will not be reflected in your Cartier Online Boutique account.</p>
+                <p>Upon successful registration of your platform account through you or your Cartier ambassador, you will be provided with a password reset link via email, which will allow you to access your account on the platform and set a permanent account login and password. You are responsible for maintaining confidentiality and security. Cartier assumes no responsibility for any misuse of your account resulting from access to or use of your password and account login by third parties.</p>
+                <p>For details regarding the use of your personal information, please refer to our Privacy Policy . If you choose to “order as a non-member” on the platform, your online account will not be opened and we will use your personal information solely for the purpose of processing your order.</p>
+                <p>When ordering through the platform, you will be asked to provide a shipping address, sender's address and other personal information, including payment information. Cartier or third party providers may collect additional information for security purposes during this process.</p>
+                <p>You represent and warrant that the personal information provided to the contact center or platform is truthful, valid, complete and up-to-date in all respects. You also confirm that you are a party to the delivery address provided (unless it is a gift) and to this information you are sending it.</p>
+                <p>If the information provided by you to the contact center or the platform changes, you can access your account and change the information on the platform directly, contact the contact center (1566-7277), email (contact.korea@cartier.com) or our processing of personal information Please let us know through the contact information listed in the policy .</p>
+            </li>
+            <li>
+                <h4>5. Personalized service</h4>
+                <p>For certain products, it is possible to provide personalized service (impression, engraving) or other services. If you wish to personalize your product, please provide the details upon request of the sales channel.</p>
+                <p>We reserve the right to withhold or refuse to accept orders for personalized products or message cards for any objectionable, illegal or contrary to our policies. You are responsible for the accuracy of the product engraving statement.</p>
+                <p>In addition, orders for personalized products are non-cancellable and products that have been personalized in any way or tailored to your request are not eligible for exchange or return in accordance with these Terms of Sale. However, this does not affect the rights you have as a consumer (see 14. Manufacturer's Warranty and Consumer Legal Rights below for further information ).</p>
+            </li>
+            <li>
+                <h4>6. Order process</h4>
+                <span>The order process through the platform includes:</span>
+                <ul>
+                    <li>
+                        - Add to cart : you can select a product and add it to your shoppping cart. you can then continue shopping for other products and add them to your cart (stock and quantity restrictions apply). adding an item to your shopping cart does noot guarantee
+                    </li>
+                    <li>
+                        - Non member/my cartier account order: when you are ready to place an order. you can proceed with “checkout” as a non-member or through a registered account. You can exclude some items from your shopping cart during the ordering process.
+                    </li>
+                    <li>
+                        - Shipping, confirmation and payment: During the ordering process. You may add and review your order history and personal information (including email, shipping address, shipper address and payment information). Please review the details of the order summary page in detail before completing the order.
+                    </li>
+                    <li>
+                        - Order completion: Finally, check the agreement and complete the order.
+                    </li>
+                </ul>
+                <p>If you place an order through the Contact Center, a Cartier Ambassador will guide you through the above process and confirm your order orally.</p>
+                <p>We reserve the right to refuse, cancel and terminate any order at any time in our sole discretion for reasonable cause. For example, if we have a pending payment dispute over your past order, or if we suspect that you have engaged in (i) fraud or black market activity, or (ii) a violation of these Terms of Sale, we will reject your order. , cancel or cancel.</p>
+            </li>
+            <li>
+                <h4>7. Prices, taxes and shipping charges</h4>
+                <p>All prices displayed on the platform product pages or provided in the contact center are inclusive of VAT, but exclusive of Shipping Costs and other taxes, unless otherwise stated.</p>
+                <p>Shipping cost is not charged separately.</p>
+                <p>We reserve the right to change prices and shipping charges at any time without prior notice.</p>
+                <p>We take the utmost care to verify the accuracy of product price and shipping information when entered into our systems or provided through our contact centers. However, despite our efforts, we cannot rule out the possibility of errors in notation of product prices or shipping costs provided through sales channels. We will contact you promptly if there is an error in the price or shipping cost of the product you ordered. If we are unable to contact you through the contact information you provided during the ordering process, we will cancel your order and notify you in writing. If we mistakenly authorize and process an order for a product with an incorrect price or shipping charge, we may cancel the supply of the product and refund the amount we paid.</p>
+            </li>
+            <li>
+                <h4>8. Payment</h4>
+                <p>We accept payment methods established during the order process through our sales channels. Depending on your payment method, you may be asked to provide additional information, including identification in certain formats.</p>
+                <p>When placing an order through the Platform, you must enter payment information in the appropriate form. When ordering over the phone, you must provide your payment information through the contact center. For all payment cardholders, validation and approval from the card issuer is required. If your card issuer refuses to authorize payment to us, you must contact the card issuer directly to resolve the issue.</p>
+                <p>Other payment methods may also require validation and approval from the payment system provider. You expressly grant us the right to perform security checks as necessary and to send and receive information about you (including update information) from or to third parties from time to time. Such information includes, but is not limited to, payment card information, information for identification purposes, information for card verification and initial payment authorization and individual purchase authorization.</p>
+                <p>When placing an order, payment is processed through our order page, and you will be directed to the third-party payment agency (NHN KCP) module page to complete the payment. We offer three options: Credit Card, Direct Debit and Payco Easy Payment.</p>
+                <p>If you select a credit card as a payment method, you must select a credit card company contracted with us and installment or lump sum payment, and process other required verification procedures. If you choose to pay in installments, you will receive your product prior to payment in full. If you choose lump-sum payment, you will receive your product after payment has been verified by your credit card company. In the case of lump-sum or installment payments, payments are made through the appropriate approval process. If you choose to pay by debit card, you will receive the product after the appropriate authorization process and payment is made.</p>
+                <p>If you place an order by phone, the Contact Center will send you an email requesting payment after placing your order. Through this link, you directly select a payment method and proceed with the payment.</p>
+            </li>
+            <li>
+                <h4>9. Order confirmation</h4>
+                <p>Upon placing your order through our sales channels after your selection, you will receive an Acknowledgment of Order in writing (either by email or other means confirming your order history with your order number). Please save your order number for future order-related inquiries. However, the order confirmation does not constitute acceptance of your order. We process your order after reviewing and confirming customary credit, fraud, security and related legal matters to confirm your order. Upon receipt of your order confirmation, you are responsible for reviewing and verifying that it accurately reflects your order details. If you have any questions or concerns about the order confirmation, or if the order confirmation does not accurately reflect your order, please contact our contact center promptly.</p>
+                <p>These Terms of Sale are provided when we confirm your order.</p>
+            </li>
+            <li>
+                <h4>10. Shipping policy</h4>
+                <p>We ship to Post Office Courier and Valex-recognized addresses.</p>
+                <p>If you place an order for multiple products, we will only start shipping after all of the products you order are ready (unless otherwise noted, we do not ship some items except perfumes).</p>
+            </li>
+            <li>
+                <h4>11. Confirmation of order and delivery</h4>
+                Upon delivery of your order, we will provide you with a written confirmation of your order and delivery (by email or otherwise). This Order and Delivery Confirmation represents our acceptance of your order and the existence of a binding contract of sale.
+            </li>
+            <li>
+                <h4>12. Shipping</h4>
+                <p>We will use reasonable efforts to ensure delivery within thirty (30) days from the date of confirmation of order and delivery. However, unless we have stated that an additional deadline is required, such as a product or service that requires personalization or manufacturing according to your request.</p>
+                <p>If delivery of a product is delayed for reasons beyond our control, we will notify you as soon as possible and use reasonable efforts to minimize the delay. If we fail to deliver within thirty (30) days from the date of confirmation of order and delivery, or otherwise specified, you may contact our Contact Center to cancel the order and receive a refund of the amount paid by you for the product not received. can.</p>
+                <p>IN NO EVENT SHALL YOUR SOLE REMEDY FOR ANY BREACH WITH OUR DELIVERY ARE LIMITED TO THE RIGHT TO CANCEL THE SUCH ORDER AND RETURN TO THE AMOUNT PAID BY YOU FOR THE PRODUCT NOT RECEIVED.</p>
+                <p>When estimating your shipping schedule, please consider credit authorization, address verification, security verification and order processing times. Also, please note that delivery is always subject to payment.</p>
+                <p>To confirm delivery of each product, we will request a handwritten or electronic signature from you or (unless you specify otherwise) a person at the designated shipping address, at which point the risk and liability of the purchased product will pass. If you have designated a recipient other than you for delivery purposes (e.g. in the case of a gift), the signature of that recipient (or person to whom delivery is to be made) certifies delivery and fulfillment of Cartier's contract of sale and certifies that the product was delivered to you. You acknowledge and accept that the responsibility is equally transferred to the applicable Recipient. For certain product lines, we may only ship to the person listed on the packaging label as the recipient and may require ID verification upon delivery. For additional information, please contact our contact center.</p>
+            </li>
+            <li>
+                <h4>13. Refunds and exchanges</h4>
+                <ol>
+                    <li>
+                        (a) Right to Cancellation<br>
+                        You may cancel any contract entered into by our written order confirmation, either (i) on the date of receipt of the order and delivery confirmation or (ii) on the date on which you or a person designated by you (other than the shipper) acquires possession of the Ordered Products. Cancellation may be made at any time within thirty (30) days from the subsequent date.
+                        <p>You can cancel the contract and return the products purchased online through the online form at the link . If you wish to return a product purchased through the contact center, please contact the appropriate center.</p>
+                    </li>
+                    <li>
+                        (b) Return Procedure<br>
+                        Products purchased through the sales channels may only be returned to the Cartier e-boutique distribution center at the address of the Returns Department provided by the contact center in accordance with these Terms and Conditions of Sale.
+                        <p>Products not purchased through our sales channels can not be returned to our online e-boutique distribution centre .</p>
+                        <p>We do not assume any responsibility or liability for loss or damage caused during delivery if you use a delivery company other than the one designated by us or if you ship directly. You must retain proof of return shipping and we assume no responsibility for this unless such proof is provided. Refunds or exchanges are only possible for products received through our Cartier online boutique logistics center.</p>
+                    </li>
+                    <li>
+                        (c) Condition of Returned Product<br>
+                        We will process the refund or exchange after we have verified that the returned Product meets the conditions of our Refund and Exchange Policy .
+                        <p>Our products must be returned in new, unused, and complete condition, with all packaging materials including the original Cartier box and shipping packaging, including any relevant accessories and documentation (if applicable), security tags and stickers attached. For example, watch bracelets adjusted to your request must be returned with the same number of links in the original shipping packaging. We reserve the right to refuse returns, refunds, or lower exchange rates if the product shows signs of being used, the security tag attached to the product has been removed, the product has been used in any way, or has been altered in any way from its original condition. .</p>
+                        <p>If you received free items as part of your order, these items must also be returned.</p>
+                        <p>All returns are subject to our stringent Quality Inspection (QC) to ensure that the above conditions are met. If the product does not meet the QC standards, we will refuse to accept the return and the product will be returned to you. If the product meets the QC standards, we will proceed with a refund or exchange.</p>
+                        <p>If you fail to comply with these Terms of Sale, we reserve the right to refuse to accept returned products and return the products at your expense.</p>
+                    </li>
+                    <li>
+                        (d) Non-Returnable or Non-Exchange<br>
+                        Products Orders for products that have been personalized or customized in any way cannot be canceled and such products cannot be returned for exchange or refund. This includes, but is not limited to, stamped or engraved products.
+                        <p>Ink-filled writing instruments and opened bottles or refills are also non-returnable to us.</p>
+                        <p>Cosmetics that have been opened or the original seal removed cannot be returned. We may refuse to return cosmetics unless they are returned in an unused, unopened, original seal. However, perfume and aerosol sales are final and non-returnable.</p>
+                    </li>
+                    <li>
+                        (e) Refunds<br>
+                        You may return products purchased through the Sales Channels for a refund, but such returns must comply with these Terms of Sale, which specifically include (a) cancellation rights and (b) return procedures above.
+                        <p>Only the buyer may receive a refund of the purchase price, and under no circumstances may the person receiving the product as a gift (“ Gift Recipient ”) receive a refund. If you are a gift recipient and wish to return a product, please contact our contact center to discuss your options.</p>
+                        <p>If the return complies with these Terms and Conditions of Sale, we will provide a commercially reasonable I will try my best.</p>
+                    </li>
+                    <li>
+                        (f) Exchange<br>
+                        You may return a product purchased through a sales channel for a one-time exchange of the same size within the same style, and the product to be exchanged must be of the same value as the original purchased product, and such return shall specifically include (a) ) to abide by these Terms of Sale, including the right to cancel and (b) return procedures. In addition, if the product you purchased at the online boutique is less than 60 million won (60,000,000), you can exchange it at a specific offline boutique under the same terms and conditions of sale. However, for exchanges at the offline boutique, you must visit the boutique within thirty (30) days from the date of receipt, and the product must be in a new, unused, and complete condition, in a basic Cartier box including related accessories and documents (if applicable). and shipping packaging, must be returned with all packaging materials, security tags and stickers attached. Products over 60 million won (60,000,000) can be exchanged only at the online boutique, the channel where they were purchased.
+                        <p>You may request an exchange, otherwise we may proceed with a refund of your existing order and processing of a new order. In any event, the sale of the returned product will be canceled and a new order must be placed for the ordered product.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h4>14. Manufacturer warranty and consumer legal rights</h4>
+                <p>We are committed to ensuring that all products strictly comply with our quality standards and meet our technical and aesthetic standards.</p>
+                <p>Some products are covered by the Cartier Guarantee. If you wish to repair a product covered by the Cartier warranty, please refer to the Cartier warranty applicable to the product and contact our contact center for additional information.</p>
+                <p>As a consumer, you have statutory rights under the laws governing the sale of consumer goods. These statutory rights are not affected by these Terms of Sale or the applicable Cartier Warranty. In Korea, a consumer may place an order within 30 days of (i) within 3 months of receiving the product or (ii) within 30 days of becoming aware of the defect or inconsistency if there is a discrepancy between the details stated in the advertisement or sales contract and the product received. can be canceled.</p>
+            </li>
+            <li>
+                <h4>15. Free service</h4>
+                <p>The following services are provided to you free of charge at the expense of the sales channels:</p>
+                <ol>
+                    <li>
+                        (a) Gift packaging<br>
+                        All orders are shipped with a Cartier gift box, specially wrapped by Cartier, together with a Cartier shopping bag (if applicable).
+                    </li>
+                    <li>
+                        (b) Engraving /<br>
+                        Imprinting Engraving and imprinting services are available for certain products and are only available for order sales through contact centers. If you would like to have your Cartier product engraved or engraved, you can order it directly online. If you would like to have a Cartier product engraved or engraved when ordering by phone, please provide the relevant information to the Contact Center. Orders for personalized Cartier products are non-cancellable, and personalized products cannot be returned for exchange or refund .
+                    </li>
+                    <li>
+                        (c) Watch band exchange/adjustment<br>
+                        Cartier watch bands are supplied as standard. You may request a line size change by contacting our contact center. For certain watch models, it is also possible to adjust the watch strap. If you request a watch bracelet adjustment, the removed ring will be returned to you in the shipping packaging.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h4>16. Repair</h4>
+                For all repair inquiries regarding products ordered through sales channels, please contact our contact center or offline boutique.
+            </li>
+            <li>
+                <h4>17. Product description</h4>
+                We strive to ensure the accuracy and completeness of information provided through the platform, advertisements or catalogs or contact centers, including product descriptions, dimensions and colors. However, we make no warranties, express or implied, as to the accuracy, reliability and completeness of such information.
+            </li>
+            <li>
+                <h4>18. Limitation of liability</h4>
+                <p>To the fullest extent permitted by applicable law, we disclaim and exclud any terms and conditions and warranties, express or implied under applicable law, or concerning our historical trade practices, use or poactices with respect to products and sales channels. These Terms of Sale do not limit or exclude our liability which cannot be limited or excluded under applicable law. Under this premise, our total liability to you under these Terms of Sale in relation to your order shall in no event be one hundred percent (100%) of the price of the products ordered by you, whether in contract, tort (including negligence) or otherwise. not exceed, even if we are known of the possibility of such damages.</p>
+                <p>Some jurisdictions may not allow such warranties or exclusions or limitations of liability under consumer protection laws, so the above exclusions and limitations may not apply to you.</p>
+            </li>
+            <li>
+                <h4>19. General provisions</h4>
+                <p>If any part or provision of these Terms of Sale is held to be unlawful, void or unenforceable, that part or provision shall not be deemed to form a part of these Terms of Sale, but the legality, effect or enforceability of any other provision of these Terms of Sale. will remain in effect unless otherwise required by law.</p>
+                <p>These Terms of Sale (and any other terms incorporated by reference) constitute the entire agreement between you and us with respect to your order for any products or services, whether oral or written, and whether any prior agreement, draft agreement, arrangement, commitment, or nature of any relevant prior agreement, contract or agreement. It supersedes and supersedes any security agreement.</p>
+                <p>We shall not be liable for any failure or delay in performance or non-compliance with any obligations under these Terms of Sale due to any cause beyond our reasonable control.</p>
+                <p>No waiver or waiver by us of any breach of any provision of these Terms of Sale shall be construed as a waiver or waiver of any other or subsequent breach.</p>
+                <p>This Agreement is entered into between you and us, and no third party may exercise any rights under these Terms. However, if you purchase the product as a gift, the gift recipient may be entitled to benefits under the relevant Cartier Guarantee.</p>
+            </li>
+            <li>
+                <h4>20. Allicable law and jurisdiction</h4>
+                <p>These Terms and Conditions of Sale are not governed by the provisions of private international law, but shall be governed by and construed in accordance with Korean law. Any dispute, dispute or claim arising out of or relating to these Terms of Sale, including the validity, invalidity, breach or termination of these Terms of Sale, will be determined and arbitrated in accordance with these Terms of Sale. In case of differences between Korean law and your country's mandatory consumer law, we provide you with a level of protection similar to that of your country's consumer law.</p>
+                <p>You may bring a lawsuit against us in any court in Korea or in the courts of the country in which you reside. We may also initiate any proceedings against you in the courts of your country of residence.</p>
+                <p>Without limiting the commencement of court proceedings, you and Cartier will make a reasonable effort to settle amicably during the first thirty (30) days in the first place for any dispute or default arising out of or relating to the Product, these Terms of Sale or any breach thereof. will do</p>
+            </li>
+            <li>
+                <h4>21. Contact</h4>
+                <p>If you have any questions or comments regarding these Terms of Sale or other general matters, please contact us at the contact details below.</p>
+                <address>
+                    Cartier Contact Center<br>
+                    100 Toegye-ro, Jung-gu, Seoul, Republic of Korea State Tower Namsan (Postal Code: 04631)
+                    <a href="tel:+8215667277">Phone: 1566-7277</a>
+                </address>
+                <a href="mailto:contact.korea@cartier.com">Email : contact.korea@cartier.com</a>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <input type="email" id="Newsletter" placeholder="Email" title="insert to ure email">
+                </fieldset>
+            </form>
+            <address>
+                <strong>Customor Service</strong>
+                <a href="tel:+8215667277">+82 1566 7277</a>
+                <a href="mailto:contact.korea@cartier.com">contact.korea@cartier.com</a>
+            </address>
+            <div>
+                <h3>Country</h3>
+                <span>South Korea</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>Online Boutique Service</h3>
+                <ul>
+                    <li><a href="etcShipping1.html">Delivery service</a></li>
+                    <li><a href="etcShipping4.html">Free exchange and return service</a></li>
+                    <li><a href="etcOnlineBoutique3.html">Phone order service</a></li>
+                    <li><a href="etcContactUs.html">Contact Center information</a></li>
+                    <li><a href="etcGiftWrapping1.html">Gift wrapping service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal and cookies</h3>
+                <ul>
+                    <li><a href="etcTermsOfUse.html">Terms of use</a></li>
+                    <li><a href="etcPrivacyPolicy.html">Privacy policy</a></li>
+                    <li><a href="etcTermsOfSale.html">Terms of sale</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="etcContactUs.html">Cartier Contact Center</a></li>
+                    <li><a href="etcFAQs1.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.pinterest.co.kr" target="_blank">Pinterest</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://tumblr.com" target="_blank">Tumblr</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2020 CARTIER</p>
+    </footer>
+</body>
+</html>

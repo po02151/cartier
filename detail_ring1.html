@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail - Ring 1</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/cartier.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="onTheTop reverse">
+        <div class="asideContainer">
+            <aside class="sideBar" id="login">
+                <h2>
+                    Account
+                    <button class="material-icons sideClose">close</button>
+                </h2>
+                <form>
+                    <fieldset>
+                        <legend>Welcome
+                            <input type="button" class="sideOpen" value="Create an account" data-popName="createAnAccount">
+                        </legend>
+                        <p class="inputStatus">Insert your Email and password</p>
+                        <ul class="inputContainer">
+                            <li class="inputList">
+                                <input type="text" title="user email" id="userEmail" class="customInput">
+                                <label for="userEmail">Email</label>
+                            </li>
+                            <li class="inputList">
+                                <input type="password" title="user password" id="userPassword" class="customInput">
+                                <label for="userPassword">Password</label>
+                                <input type="button" class="sideOpen customInput" value="I forgot" data-popName="forgotPassword">
+                            </li>
+                        </ul>
+                        <input type="submit" value="LOGIN" class="active btnConfirm" id="runLogin">
+                    </fieldset>
+                </form>
+            </aside>
+            <!-- ? popup Login -->
+        
+            <aside class="sideBar" id="forgotPassword">
+                <h2>
+                    Account
+                    <button class="material-icons sideClose">close</button>
+                </h2>
+                <form>
+                    <fieldset>
+                        <legend>Password reset<input type="button" class="sideOpen selfDeactive" value="Back to login" data-popName="login"></legend>
+                        <p>Confirm your email</p>
+                        <ul class="inputContainer">
+                            <li class="inputList">
+                                <input type="text" title="email input" id="email_confirm" class="customInput">
+                                <label for="email_confirm">Email</label>
+                            </li>
+                        </ul>
+                        <a href="index.html" class="active btnConfirm">RESET PASSWORD</a>
+                    </fieldset>
+                </form>
+            </aside>
+            <!-- ? popup forgotPassword -->
+        
+            <aside class="sideBar" id="createAnAccount">
+                <h2>
+                    Account
+                    <button class="material-icons sideClose">close</button>
+                </h2>
+                <form>
+                    <fieldset>
+                        <legend>Welcome<input type="button" class="sideOpen selfDeactive" value="Back to login"></legend>
+                        <p>Create your account below.</p>
+                        <ul class="inputContainer">
+                            <li class="inputList nonBg">
+                                <input type="text" title="confirm email" id="email_input" class="customInput">
+                                <label for="email_input">Email</label>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="password" title="password input" id="password_input" class="customInput">
+                                <label for="password_input">Password</label>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="password" title="password confirm" id="password_confirm" class="customInput">
+                                <label for="password_confirm">Confirm password</label>
+                            </li>
+                            <li class="inputList">
+                                <input type="text" title="First name" id="firstName" class="customInput">
+                                <label for="firstName">First name</label>
+                            </li>
+                            <li class="inputList">
+                                <input type="text" title="Last name" id="lastName" class="customInput">
+                                <label for="lastName">Last name</label>
+                            </li>
+                            <li class="inputList">
+                                <input type="checkbox" id="btn_newsletter">
+                                <label for="btn_newsletter" class="checkLabel">Subscibe to newsletter</label>
+                            </li>
+                        </ul>
+                        <input type="button" value="REGISTER" class="active btnConfirm selfDeactive" id="callLogin">
+                        <p>By creating an account, you accept our Terms and Conditions and confirm that you have read our Privacy Policy.</p>
+                    </fieldset>
+                </form>
+            </aside>
+            <!-- ? popup Create an account -->
+        
+            <aside class="sideBar" id="myPage">
+                <button class="material-icons sideClose">close</button>
+                <h2>
+                    Hello, Yoonjin.
+                    <a href="index.html">Logout</a>
+                </h2>
+                <div>
+                    <h3>Quick access</h3>
+                    <a href="etcMyPage1.html">Order History</a>
+                    <a href="etcMyPage3.html">Addresses</a>
+                    <a href="etcMyPage4.html">Wish List</a>
+                </div>
+                <a href="etcMyPage1.html" class="btnConfirm">ACCOUNT</a>
+            </aside>
+            <!-- ? popup My account -->
+        
+            <aside class="sideBar" id="shoppingBag">
+                <form>
+                    <fieldset id="checkoutContainer">
+                        <legend>Recipient</legend>
+                        <div>
+                            Customer Service
+                            <a href="tel:+8215667277">call</a>
+                            <a href="mailto:contact.korea@cartier.com">email</a>
+                        </div>
+                        <p>In order to receive the product safely, please fill in the correct address and contact information, and if possible, please place an order at an address where you can receive the product directly.</p>
+                        <ul class="inputContainer">
+                            <li class="inputList">
+                                <input type="text" title="First name" id="checkFirstName" class="customInput">
+                                <label for="checkFirstName">First name</label>
+                            </li>
+                            <li class="inputList">
+                                <input type="text" title="Last name" id="checkLastName" class="customInput">
+                                <label for="checkLastName">Last name</label>
+                            </li>
+                            <li>
+                                <p>Click the 'Find Postal Code' button to enter the address.</p>
+                                <button class="btnConfirm">FIND POSTAL CODE</button>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="text" title="Zipcode" id="zipCode" class="customInput">
+                                <label for="zipCode">Zipcode</label>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="text" title="Address" id="address" class="customInput">
+                                <label for="address">Address</label>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="text" title="Detailed address" id="detailedAddress" class="customInput">
+                                <label for="detailedAddress">Detailed Address</label>
+                            </li>
+                            <li class="inputList nonBg">
+                                <input type="text" title="Address Alias" id="addressAlias" class="customInput">
+                                <label for="addressAlias">Address Alias</label>
+                            </li>
+                            <li class="inputList">
+                                <strong>Sender</strong>
+                                <input type="checkbox" title="Sender" id="sender">
+                                <label for="sender" class="checkLabel">Enter this sender address. (If the receiver and sender are different, please enter them.)</label>
+                            </li>
+                            <li>
+                                <strong>Contact</strong>
+                                <p>You will be directed to the contact information you entered regarding product orders.</p>
+                            </li>
+                            <li class="inputList">
+                                <input type="text" title="Cell Phone Number" id="phoneNumb" class="customInput">
+                                <label for="phoneNumb">Cell Phone Number</label>
+                            </li>
+                            <li>
+                                <strong>Shipping Information</strong>
+                                <p>Cartier offers safe and free shipping on all orders.</p>
+                                <p>All products sold through Cartier Online Boutique are safely delivered to customers through post office delivery and Valex. Orders less than KRW 5 million will be delivered by post office delivery, and orders over KRW 5 million can be delivered safely through Valex. After ordering, please check the expected arrival date once more.</p>
+                            </li>
+                        </ul>
+                        <input type="submit" value="DELIVERY" class="compelete">
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Order Summary
+                            <button class="material-icons sideClose">close</button>
+                        </legend>
+                        <ul>
+                            <li>
+                                <label for="productPrice"><span>2</span> items</label>
+                                <input type="text" id="productPrice" value="9 780 000" readonly><span>KRW</span>
+                            </li>
+                            <li>
+                                <label for="shippingPrice">shipping</label>
+                                <input type="text" id="shippingPrice" value="Calculated at checkout" readonly>
+                            </li>
+                            <li>
+                                <label for="totalPrice">TOTAL</label>
+                                <input type="text" id="totalPrice" value="9 780 000" readonly><span>KRW</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src="images/shoppingBag_1.png" alt="shopping bag list 1">
+                                    <figcaption>
+                                        <a href="detail_ring1.html"></a>
+                                        <button class="removeBtn">Remove</button>
+                                        <dl>
+                                            <dt>1895 Wedding Band</dt>
+                                            <dd>Pink Gold</dd>
+                                        </dl>
+                                        <ul class="outputContainer">
+                                            <li class="selectList">
+                                                <select>
+                                                    <option value="47">47 size</option>
+                                                </select>
+                                            </li>
+                                            <li class="selectList">
+                                                <select>
+                                                    <option value="Qty1">Qty 1</option>
+                                                </select>
+                                            </li>
+                                            <li class="inputList">
+                                                <input type="text" id="productPrice1" value="1 130 000" readonly><span>KRW</span>
+                                            </li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="images/shoppingBag_2.png" alt="shopping bag list 2">
+                                    <figcaption>
+                                        <a href="detail_bracelet1.html"></a>
+                                        <button>Remove</button>
+                                        <dl>
+                                            <dt>Love Bracelet</dt>
+                                            <dd>Pink Gold</dd>
+                                        </dl>
+                                        <ul class="outputContainer">
+                                            <li class="selectList">
+                                                <select name="sizeSelect">
+                                                    <option value="oneSize">One size</option>
+                                                </select>
+                                            </li>
+                                            <li class="selectList">
+                                                <select name="qtySelect">
+                                                    <option value="Qty1">Qty 1</option>
+                                                </select>
+                                            </li>
+                                            <li class="inputList">
+                                                <input type="text" id="productPrice2" value="8 650 000" readonly><span>KRW</span>
+                                            </li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        <input type="button" value="CHECKOUT" class="btnConfirm btnCheckOut">
+                    </fieldset>
+                </form>
+            </aside>
+            <!-- ? popup ShoppingBag -->
+        
+            <aside class="sideBar" id="search">
+                <h2>
+                    Search
+                    <button class="material-icons sideClose">close</button>
+                </h2>
+                <form>
+                    <fieldset>
+                        <input type="search" id="searchBar" placeholder="Search here..." list="searchFilter">
+                        <datalist id="searchFilter">
+                            <option value="Ring">Ring</option>
+                            <option value="Bracelet">Bracelet</option>
+                            <option value="Necklace">Necklace</option>
+                            <option value="Earring">Earring</option>
+                            <option value="Watch">Watch</option>
+                        </datalist>
+                    </fieldset>
+                    <div class="searchSuggestions">
+                        <h3>Suggestions</h3>
+                        <a href="list_ring.html">Ring</a>
+                        <a href="list_necklace.html">Necklace</a>
+                    </div>
+                </form>
+            </aside>
+            <!-- ? popup search -->  
+        </div>
+
+        <h1>
+            <a href="index_after.html">
+                cartier
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="list_ring.html" class="active">Ring</a></li>
+                <li><a href="list_bracelet.html">Bracelet</a></li>
+                <li><a href="list_necklace.html">Necklace</a></li>
+                <li><a href="list_earring.html">Earring</a></li>
+                <li><a href="list_watch.html">Watch</a></li>
+            </ul>
+        </nav>
+        <div class="status signIn">
+            <a href="#" class="hamburger">
+                <span></span>
+                <span></span>
+            </a>
+            <button class="sideOpen" data-popName="myPage">My Account</button>
+            <a href="etcMyPage4.html" class="pass">Wish List</a>
+            <button class="sideOpen pass" data-popName="shoppingBag">Shopping Bag</button>
+            <span>+99</span>
+            <button class="sideOpen pass material-icons" data-popName="search">search</button>
+        </div>
+    </header>
+    <!-- ? header Fin -->
+
+    <aside class="productPhoto">
+        <button class="material-icons">favorite_border</button>
+        <ul>
+            <li>
+                <img src="images/detail_ring1_1.png" alt="1895 Wedding Band Pinkgold front">
+            </li>
+            <li>
+                <img src="images/detail_ring1_2.png" alt="1895 Wedding Band Pinkgold side">
+            </li>
+            <li>
+                <img src="images/detail_ring1_3.png" alt="1895 Wedding Band Pinkgold close-up">
+            </li>
+        </ul>
+    </aside>
+    
+    <div class="detailOpen"><span></span></div>
+    <section class="detail ring">
+        <h2>1895 Wedding Band</h2>
+        <div class="colorContainer sp30">
+            <h3>Pink Gold</h3>
+            <ol>
+                <li class="pinkGold active">
+                    <a href="detail_ring1.html">pinkGold</a>
+                </li>
+                <li class="yellowGold">
+                    <a href="detail_ring3.html">yellowGold</a>
+                </li>
+                <li class="whiteGold">
+                    <a href="detail_ring2.html">whiteGold</a>
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h3>Size
+                <a href="#">Guide</a>
+            </h3>
+            <input type="text" id="size" placeholder="Insert your Size">
+        </div>
+        <button class="detailAddBtn">
+            <span class="material-icons">work_outline</span>
+            ADD
+            <span>1 130 000</span>
+        </button>
+        <div>
+            <button class="sideOpen" data-popName="explanation">Explanation</button>
+            <button class="sideOpen" data-popName="shippingNreturn">Shipping and Return</button>
+            <button class="sideOpen" data-popName="assist">Assistance</button>
+        </div>
+
+        <div class="sideBar" id="explanation">
+            <div class="popContainer">
+                <button class="material-icons sideClose">close</button>
+                <dl>
+                    <dt>
+                        <small>RING</small>
+                        1895 wedding band
+                    </dt>
+                    <dd>- Product number:  B4088200</dd>
+                    <dd>- Product Information</dd>
+                    <dd>- 1895 wedding band, 2.6 mm wide, 18K pink gold, set with one brilliant-cut diamond of 0.01 carat.</dd>
+                </dl>
+                <p>
+                    <strong>Collection Details</strong>
+                    Cartier diamonds are special. As the queen of gems, diamonds are the expression of craftsmanship of excellence and refinement.
+                </p>
+            </div>
+        </div>
+        <!-- ? detail content 1 Fin -->
+
+        <div class="sideBar" id="shippingNreturn">
+            <div class="popContainer">
+                <button class="material-icons sideClose">close</button>
+                <div>
+                    <h3>Free shipping and return</h3>
+                    <p>Cartier Online Boutique offers free shipping and free returns on all purchases. In the case of exchange or return, free exchange/return is possible within 30 days of receipt of the product according to the terms and conditions of sale. For details, please check the terms of sale and exchange/refund policy.</p>
+                </div>
+                <div>
+                    <h3>Shipping information</h3>
+                    <p>- Normal delivery: For purchases of less than 5 million won, it is safely delivered through the post office delivery service and takes 3-5 business days.</p>
+                    <p>- Special Delivery: For purchases of 5 million or more, it will be delivered safely on the promised date through Valex.</p>
+                    <p>(If time is needed to secure stock, it may take 8 to 10 business days after ordering, and the estimated delivery date will be notified by email and in the order confirmation when placing an order.)</p>
+                    <a href="etcShipping4.html">READ MORE</a>
+                </div>
+            </div>
+        </div>
+        <!-- ? detail content 2 Fin -->
+
+        <div class="sideBar" id="assist">
+            <div class="popContainer">
+                <button class="material-icons sideClose">close</button>
+                <p>If you need assistance or have any questions, please contact the Cartier Contact Center.</p>
+                <div>
+                    <h3>Email us</h3>
+                    <a href="mailto:contact.korea@cartier.com">contact.korea@cartier.com</a>
+                </div>
+                <div>
+                    <h3>Phone Number</h3>
+                    <a href="tel:+8215667277">1566-7277</a>
+                </div>
+            </div>
+        </div>
+        <!-- ? detail content 3 Fin -->
+    </section>
+    <!-- ? detail content Fin -->
+
+    <footer>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <input type="email" id="Newsletter" placeholder="Email" title="insert to ure email">
+                </fieldset>
+            </form>
+            <address>
+                <strong>Customor Service</strong>
+                <a href="tel:+8215667277">+82 1566 7277</a>
+                <a href="mailto:contact.korea@cartier.com">contact.korea@cartier.com</a>
+            </address>
+            <div>
+                <h3>Country</h3>
+                <span>South Korea</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>Online Boutique Service</h3>
+                <ul>
+                    <li><a href="etcShipping1.html">Delivery service</a></li>
+                    <li><a href="etcShipping4.html">Free exchange and return service</a></li>
+                    <li><a href="etcOnlineBoutique3.html">Phone order service</a></li>
+                    <li><a href="etcContactUs.html">Contact Center information</a></li>
+                    <li><a href="etcGiftWrapping1.html">Gift wrapping service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal and cookies</h3>
+                <ul>
+                    <li><a href="etcTermsOfUse.html">Terms of use</a></li>
+                    <li><a href="etcPrivacyPolicy.html">Privacy policy</a></li>
+                    <li><a href="etcTermsOfSale.html">Terms of sale</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="etcContactUs.html">Cartier Contact Center</a></li>
+                    <li><a href="etcFAQs1.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.pinterest.co.kr" target="_blank">Pinterest</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://tumblr.com" target="_blank">Tumblr</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2020 CARTIER</p>
+    </footer>
+</body>
+</html>

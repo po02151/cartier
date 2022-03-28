@@ -1,0 +1,1396 @@
+html,body{
+    height: 100%;
+}
+header > nav,
+header > div:nth-of-type(1) aside h2,
+header > div:nth-of-type(1) legend,
+header > div:nth-of-type(1) legend + p,
+#myPage > div a,
+header > div:nth-of-type(2) > *:not(.material-icons),
+#searchBar,
+.searchSuggestions > *:not(h3),
+header aside#shoppingBag dl,
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(3) > *,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul li.inputList > *,
+header aside#shoppingBag #checkoutContainer p,
+header aside#shoppingBag #checkoutContainer strong,
+footer > div:first-of-type form fieldset legend,
+footer > div:first-of-type address strong,
+footer > div:first-of-type div h3,
+section.mainContainer > ul:first-of-type li a,
+section.mainContainer ul:last-of-type li a dl,
+fieldset ul.inputContainer li.inputList label,
+.btnConfirm,
+.compelete,
+.btnContactUs,
+section.list ul li a dl,
+aside.etcSideBar *:not(button),
+section.etcContainer *:not(table *, .btnConfirm, ul#accordionContainer li h4 span, label, textarea + span, .btnContactUs, ul.myAddress + a),
+section.detail *:not(.detailAddBtn *, small, dl + p *, div.popContainer button),
+section.list h2{
+    font-family: 'futura-pt';
+    letter-spacing: 0.5px;
+}
+
+aside input[type='button']:not(.btnConfirm),
+aside input + *,
+aside div h3,
+aside h2 a,
+aside#shoppingBag ul:not(.inputContainer):first-of-type li:not(:last-child) *,
+aside#shoppingBag figure figcaption button,
+aside#shoppingBag #checkoutContainer > div,
+footer:not(legend,strong,h3),
+#explanation dl + p,
+#assist h3,
+#shippingNreturn a,
+section.etcContainer > ul li h4 > span,
+section.etcContainer > ul > li ol li table *,
+section.etcContainer.etcContactUs fieldset ul.inputContainer li:nth-child(5) textarea + span,
+section.etcContainer.etcMyPage fieldset ul.inputContainer.myAddress + a,
+aside.etcSideBar ul + a,
+fieldset ul.inputContainer li.inputList input:focus + label:not(.checkLabel),
+fieldset ul.inputContainer li.inputList.active label:not(.checkLabel),
+section.etcContainer.etcContactUs fieldset ul.inputContainer li:nth-child(4) label,
+section.etcContainer.etcContactUs fieldset ul.inputContainer li:nth-child(5) span input#count{
+    font-family: 'poppins';
+    letter-spacing: 0.5px;
+}
+
+.btnConfirm,
+.compelete,
+header > nav ul li a,
+header > div.status > *:not([data-popName='shoppingBag']~*),
+header .asideContainer aside.sideBar h2,
+header .asideContainer aside.sideBar fieldset legend,
+header .asideContainer aside.sideBar fieldset p,
+fieldset ul.inputContainer li.inputList label,
+header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer li > strong,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption dl *,
+#myPage a,
+#search fieldset #searchBar,
+#search div.searchSuggestions a,
+footer > div:first-of-type form fieldset legend,
+footer > div:first-of-type address strong,
+footer > div:first-of-type div h3,
+ul li dl dt,
+section.detail > div:not(#assist) h3,
+section.detail > div:nth-of-type(3) button,
+#explanation dl > *,
+#shippingNreturn p,
+#assist div.popContainer *:not(h3,a,.sideClose),
+section.etcContainer > ul > li,
+section.etcContainer > ul > li time,
+section.etcContainer p,
+section.etcContainer > ul li > ul li,
+section.etcContainer > ul > li > h4,
+section.etcContainer.etcContactUs fieldset ul.inputContainer li *:not(textarea + span),
+section.etcContainer.etcMyPage fieldset ul.inputContainer li.inputList:not(.nonEffect) label,
+section.etcContainer.etcMyPage fieldset ul.inputContainer.myAddress li:nth-of-type(3) label{
+    font-size: 14px;
+}
+
+header .asideContainer aside.sideBar fieldset legend input,
+header aside#shoppingBag fieldset:nth-of-type(1) > div,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(1) li label,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(1) li:not(:nth-of-type(3)),
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(1) li:not(:nth-of-type(3)) > input,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption *:not(dt,dd),
+#login fieldset ul.inputContainer li.inputList:nth-child(2) input:last-child,
+#createAnAccount fieldset p:last-child,
+#myPage h2 a,
+#myPage > div h3,
+#search div.searchSuggestions h3,
+footer *:not(legend,strong,h3),
+section.detail > div:nth-of-type(2) h3 a,
+#explanation dl + p,
+#shippingNreturn a,
+#assist div.popContainer div h3,
+aside.etcSideBar ul + a,
+section.etcContainer > ul > li ol li table *,
+section.etcContainer.etcContactUs fieldset ul.inputContainer li:nth-child(5) textarea + span,
+section.etcContainer.etcFAQs > ul > li h4 > span,
+section.etcContainer.etcMyPage fieldset ul.inputContainer.myAddress + a,
+fieldset ul.inputContainer li.inputList input:focus + label:not(.checkLabel),
+fieldset ul.inputContainer li.inputList.active label:not(.checkLabel),
+section.etcContainer.etcContactUs fieldset ul.inputContainer li:nth-child(4) label,
+section.etcContainer.etcContactUs fieldset ul.inputContainer li:nth-child(5) span input#count{
+    font-size: 11px;
+}
+
+header > nav ul li a,
+header > div.status > *:not([data-popName='shoppingBag']~*),
+header .asideContainer aside.sideBar h2,
+header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer li > strong,
+#createAnAccount fieldset p:last-child,
+#myPage > div h3,
+#myPage > div > a,
+#search div.searchSuggestions h3,
+footer > div:last-of-type > div ul li a,
+h2,
+h3,
+h4,
+th,
+mark,
+strong{
+    font-weight: 400;
+}
+
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(3) label,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul li.inputList input,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul li.inputList span,
+footer div h3,
+footer > div:first-of-type form fieldset legend,
+footer > div:first-of-type address strong,
+.btnConfirm,
+.compelete,
+section.mainContainer ul:last-of-type li a dl dd,
+section.list ul > li a dl dd,
+#explanation dl dt small{
+    font-weight: 500;
+}
+
+header aside.sideBar fieldset legend,
+header aside.sideBar fieldset legend input,
+header > div:nth-of-type(1) aside h2,
+header aside.sideBar fieldset ul.inputContainer li.inputList label,
+aside input[type='button']:not(.btnConfirm),
+#myPage a:not(.btnConfirm),
+#shoppingBag fieldset:first-of-type > div a,
+#shoppingBag fieldset:first-of-type:not(p),
+#shoppingBag fieldset:first-of-type ul li strong,
+#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-of-type(3) > *,
+#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li *:not(dd),
+#search div.searchSuggestions a,
+footer *,
+section.mainContainer ul:nth-of-type(2) li a dl,
+header.onTheTop > nav ul li a,
+header.onTheTop > div.status > *:not(:last-child, span),
+header.onTheTop > div.status button:last-child,
+header > div.status > span,
+section.list ul li a dl *,
+aside.etcSideBar h2,
+aside.etcSideBar > ul li.active a,
+aside.etcSideBar ul + a,
+section.etcContainer h3,
+section.etcContainer > ul li h4,
+section.etcContainer > ul li mark,
+section.etcContainer fieldset *:not(.btnConfirm, .btnContactUs),
+section.etcContainer > ul > li ol li table tr th,
+section.detail h2,
+section.detail div.colorContainer h3,
+section.detail > div:nth-of-type(2) h3 *:not(a),
+section.detail > div:nth-of-type(3) button,
+section.etcMyPage p *:not(span),
+section.etcMyPage div.wishBox p,
+#explanation,
+#shippingNreturn p,
+#assist div.popContainer *:not(h3),
+aside.etcSideBar > ul li a:hover{
+    color: rgb(46,46,45);
+}
+
+
+header .asideContainer aside.sideBar fieldset p,
+fieldset ul.inputContainer li.inputList input:focus + label:not(.checkLabel),
+fieldset ul.inputContainer li.inputList.active label:not(.checkLabel),
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li label,
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(1) > input,
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(1) > span,
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(2) > input,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption dl dd,
+#myPage > div h3,
+#search div.searchSuggestions h3,
+section.etcContainer:not(.etcMyPage) p,
+section.etcContainer.etcFAQs > ul > li > span,
+section.etcContainer.etcFAQs > ul > li > ol,
+#shippingNreturn h3,
+#assist h3,
+#shippingNreturn a,
+.etcContainer address a,
+section.etcContainer.etcContactUs fieldset ul.inputContainer li:nth-child(5) textarea + span,
+section.etcContainer.etcContactUs fieldset ul.inputContainer li:nth-child(4) label,
+section.etcContainer.etcContactUs fieldset ul.inputContainer li:nth-child(5) span input#count,
+section.detail > div:nth-of-type(2) h3 a,
+section.detail > div:nth-of-type(2) input,
+aside.etcSideBar > ul > li a,
+section.etcContainer > ul > li,
+section.etcContainer > ul > li > a,
+section.etcContainer > ul > li > ol li a,
+section.etcContainer > ul > li ol li table tr td a,
+section.etcContainer.etcFAQs > ul > li h4 > span,
+section.etcContainer.etcFAQs > ul > li > p a,
+section.etcContainer.etcMyPage > div > p > *:not(strong){
+    color: rgb(164,164,164);
+}
+
+fieldset ul.inputContainer li.inputList input:focus,
+fieldset ul.inputContainer li.inputList.active input.customInput{
+    background-color: #e9f0fd;
+}
+
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(3) > *,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul li.inputList > *,
+.btnConfirm,
+.compelete{
+    letter-spacing: 2px;
+}
+
+fieldset ul.inputContainer li.inputList input.customInput,
+#search fieldset #searchBar,
+footer > div:first-of-type form fieldset input,
+.btnContactUs,
+.detailAddBtn,
+select,
+textarea,
+section.mainContainer ul li a,
+section.list ul > li a,
+section.mainContainer ul:last-of-type li img,
+aside.productPhoto ul li img,
+section.mainContainer ul:last-of-type li a dl,
+section.detail > div:nth-of-type(2) input{
+    width: 100%;
+}
+header > nav ul li a,
+header.onTheTop > div.status > span,
+header > div.status > *:not([data-popName='shoppingBag']~*),
+header > div.status button:last-child,
+section.mainContainer ul:first-of-type li a{
+    color: rgb(255,255,255);
+}
+
+
+header .asideContainer aside.sideBar fieldset legend input,
+#login fieldset ul.inputContainer li.inputList:nth-child(2) input:last-child,
+mark,
+button,
+fieldset ul.inputContainer li.inputList.active.nonBg input{
+    background-color: transparent;
+}
+
+button,
+select,
+header .asideContainer aside.sideBar fieldset legend input,
+fieldset ul.inputContainer li.inputList input.customInput,
+header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer li:nth-of-type(8),
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li input,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul li input,
+#createAnAccount fieldset ul.inputContainer li.inputList:last-child,
+#search fieldset #searchBar,
+footer > div:first-of-type form fieldset input{
+    border: none;
+}
+
+/* .floatContainer:after */
+
+header:after,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure:after,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul:after,
+#createAnAccount fieldset ul.inputContainer::after,
+footer > div:first-of-type::after,
+footer > div:last-of-type:after,
+section.mainContainer ul:last-of-type:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+
+section.mainContainer ul:last-of-type li a dl dd:after,
+section.list ul li a dl dd:after,
+section.detail > div:nth-of-type(2) + button.detailAddBtn span:nth-of-type(2):after{
+    content: ' KRW';
+}
+
+header aside,
+footer{
+    background-color: rgb(255,255,255);
+}
+
+address,
+mark{
+    font-style: normal;
+}
+.btnConfirm{
+    background-color: rgb(46,46,45);
+    color: rgb(255,255,255);
+    border: none;
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
+}
+.compelete{
+    background-color: rgb(164,164,164);
+    color: rgb(255,255,255);
+    border: none;
+    line-height: 60px;
+    transition-property: background-color, color;
+    transition-timing-function: ease-out;
+    width: 100%;
+}
+.compelete.active{
+    background-color: rgb(46,46,45);
+    color: rgb(255,255,255);
+    transition-duration: 0.3s;
+}
+.selectList,
+#contactSelect{
+    padding-right: 20px; box-sizing: border-box;
+    background: url('../images/arrow.svg') no-repeat right center;
+}
+select{
+    box-shadow: none; background-image: none;
+    background-color: transparent; -moz-appearance: none;
+    -webkit-appearance: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+ul, ol{
+    list-style: none;
+}
+.sideBar{
+    display: none;
+}
+.sideBar.active{
+    display: block;
+}
+
+a,
+button,
+input,
+label,
+section.etcContainer:not(.etcFAQs) > ul > li > h4,
+section.etcContainer.etcFAQs > ul > li h4{
+    cursor: pointer;
+}
+
+
+section:not(.mainContainer) + footer{
+    border-top: 1px solid rgba(46,46,45,0.5);
+}
+
+footer{
+    position: relative;
+    z-index: 10;
+}
+
+
+header.onTheTop{
+    background-color: rgba(255,255,255,0.8);
+}
+header.onTheTop > h1 a{
+    background: url('../images/logo_black.png') right center / contain no-repeat;
+}
+/* header BG & fontColor reverse */
+
+header.onTheTop.reverse{
+    background-color: rgba(255,255,255,0);
+}
+/* header nonBG - nonBG & black */
+
+header .asideContainer{
+    display: none;
+}
+header .asideContainer.active{
+    background-color: rgba(255,255,255,0.5); display: block;
+    width: 100%; height: 100%; position: fixed; left: 0; top: 0;
+}
+header .asideContainer aside.sideBar form fieldset:not(#shoppingBag fieldset){
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+}
+/* aside background */
+
+
+/* global allUsing */
+
+header.scrollBG{
+    background-color: rgba(255,255,255,0.8);
+    box-sizing: border-box;
+}
+header.scrollBG h1 a{
+    background: url('../images/logo_black.png') right center / contain no-repeat;
+}
+header.scrollBG > div.status button:last-child{
+    color: rgb(46,46,45);
+}
+/* header Scroll */
+
+header{
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+}
+header > *:not(aside, .signIn){
+    line-height: 35px;
+}
+header > h1 a{
+    text-indent: -9999px;
+    background: url('../images/logo_white.png') right center / contain no-repeat;
+    z-index: 1000;
+}
+header > div.status button:last-child{
+    font-size: 27px;
+}
+header > div.status button,
+header aside#shoppingBag fieldset:nth-of-type(2) legend button{
+    padding: 0;
+}
+header > div.status > span{
+    background-color: rgb(255,255,255);
+    text-align: center;
+}
+header .asideContainer aside.sideBar{
+    box-sizing: border-box;
+    overflow-y: scroll;
+    position: fixed;
+    right: 0; top: 0;
+    height: 100%;
+}
+header .asideContainer aside.sideBar h2{
+    line-height: 24px;
+}
+header .asideContainer aside.sideBar h2 button{
+    float: right;
+    padding: 0;
+}
+header .asideContainer aside.sideBar fieldset legend input{
+    position: absolute;
+    right: 0;
+    padding: 0;
+}
+header .asideContainer aside.sideBar fieldset p{
+    margin-bottom: 50px;
+}
+header .asideContainer aside.sideBar fieldset ul.inputContainer li.inputList{
+    border-bottom: 1px solid rgb(46,46,45);
+    margin-bottom: 65px;
+    position: relative;
+}
+header .asideContainer aside.sideBar fieldset ul.inputContainer li.inputList input.customInput{
+    padding: 20px 0;
+}
+header .asideContainer aside.sideBar fieldset ul.inputContainer li.inputList label:not(.checkLabel){
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+header .asideContainer aside.sideBar fieldset ul.inputContainer li.inputList input:focus + label:not(.checkLabel),
+header .asideContainer aside.sideBar fieldset ul.inputContainer li.inputList.active label:not(.checkLabel){
+    top: -30px;
+}
+/* A/U sidebar  */
+
+
+header aside#shoppingBag{
+    box-sizing: border-box; height: 100%;
+}
+
+/* fieldset:nth-of-type(1) */
+header aside#shoppingBag fieldset:nth-of-type(1){
+    box-sizing: border-box;
+    border-right: 1px solid rgb(238,238,238);
+    display: none;
+}
+header aside#shoppingBag fieldset#checkoutContainer.active{
+    display: block;
+    z-index: 1004;
+}
+header aside#shoppingBag fieldset:nth-of-type(1) legend{
+    margin-bottom: 40px;
+    position: relative;
+}
+header aside#shoppingBag fieldset:nth-of-type(1) > div{
+    position: absolute;
+    top: 55px;
+}
+header aside#shoppingBag fieldset:nth-of-type(1) > div > a{
+    display: inline-block; line-height: 11px;
+    padding: 0 5px;
+}
+header aside#shoppingBag fieldset:nth-of-type(1) > div > a:nth-child(2){
+    border-left: 1px solid rgb(46,46,45);
+}
+header aside#shoppingBag fieldset:nth-of-type(1) > div + p{
+    line-height: 20px;
+    margin-bottom: 70px;
+}
+header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer li:nth-of-type(1),
+header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer li:nth-of-type(2){
+    width: 45%;
+    float: left;
+}
+header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer li:nth-of-type(2){
+    margin-left: 10%;
+}
+header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer li:nth-of-type(3){
+    clear: both;
+}
+header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer li:nth-of-type(3) button{
+    margin-bottom: 70px;
+}
+header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer li p{
+    line-height: 20px;
+}
+header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer li > strong{
+    display: block;
+    margin-bottom: 40px;
+    line-height: 20px;
+}
+/* fieldset:nth-of-type(1) */
+
+header aside#shoppingBag fieldset:nth-of-type(2){
+    height: 100%;
+    box-sizing: border-box;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) legend{
+    position: relative;
+    width: 100%;
+    top: 55px;
+    margin-bottom: 60px;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) legend button{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul{
+    max-width: 550px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(46,46,45);
+}
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li label{
+    float: left;
+    width: 50%;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(1) > input{
+    width: 40%;
+    padding: 0;
+    text-align: right;
+    vertical-align: middle;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(1) > span{
+    display: inline-block;
+    text-align: right;
+    width: 10%;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(3) input{
+    font-size: 24px;
+    box-sizing: border-box;
+    text-align: right;
+    padding-bottom: 13px;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(3) span{
+    font-size: 24px;
+    margin-bottom: 40px;
+    display: inline-block;
+    text-align: right;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2){
+    max-width: 550px;
+    overflow-y: scroll;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li{
+    position: relative;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure img{
+    display: block;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption button{
+    position: absolute;
+    right: 0;
+    padding: 0;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption dl{
+    line-height: 20px;
+    display: block;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul{
+    box-sizing: border-box;
+    line-height: 16px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul li{
+    float: left;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul li.inputList{
+    position: absolute;
+    right: 0;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul li.inputList input{
+    text-align: right;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul li input{
+    padding: 0;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) + input{
+    max-width: 550px;
+    opacity: 1;
+    transition-property: opacity;
+}
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) + input.transparent{
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+#login fieldset ul.inputContainer li.inputList:nth-child(2) input:last-child{
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+#login fieldset .btnConfirm{
+    margin-bottom: 50px;
+}
+/* aside - login */
+
+#forgotPassword a.btnConfirm{
+    line-height: 60px;
+    text-align: center;
+}
+/* aside - forgotPassword */
+
+#createAnAccount fieldset ul.inputContainer li.inputList:nth-child(2),
+#createAnAccount fieldset ul.inputContainer li.inputList:nth-child(3),
+#createAnAccount fieldset ul.inputContainer li.inputList:nth-child(4),
+#createAnAccount fieldset ul.inputContainer li.inputList:nth-child(5){
+    width: 48%;
+    float: left;
+    top: 10px;
+}
+#createAnAccount fieldset ul.inputContainer li.inputList input:focus + label:not(.checkLabel){
+    position: absolute;
+    top: -30px;
+}
+#createAnAccount fieldset ul.inputContainer li.inputList:nth-child(3),
+#createAnAccount fieldset ul.inputContainer li.inputList:nth-child(5){
+    margin-left: 4%;
+}
+#createAnAccount fieldset ul.inputContainer li.inputList:last-child{
+    clear: both;
+}
+#createAnAccount .btnConfirm{
+    margin-bottom: 35px;
+}
+#createAnAccount fieldset p:last-child{
+    font-size: 11px;
+    line-height: 16px;
+}
+/* aside - createAnAccount */
+
+#myPage button.sideClose{
+    float: right;
+    padding: 0;
+}
+#myPage h2{
+    max-width: 550px;
+    font-size: 20px;
+}
+#myPage h2 a{
+    float: right;
+    line-height: 16px;
+    border-bottom: 1px solid rgb(46,46,45);
+    font-size: 11px;
+}
+#myPage > div h3{
+    line-height: 16px;
+    margin-bottom: 25px;
+}
+#myPage > div > a{
+    padding: 15px 0px;
+}
+#myPage > div > a:last-child{
+    margin-bottom: 70px;
+}
+#myPage div + a{
+    line-height: 60px;
+    background-color: rgb(46,46,45);
+    text-align: center;
+    max-width: 550px;
+}
+/* aside - myPage */
+
+#search fieldset #searchBar{
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(46,46,45);
+    margin-bottom: 50px;
+}
+#search div.searchSuggestions h3{
+    line-height: 16px;
+    margin-bottom: 40px;
+}
+#search div.searchSuggestions a{
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+/* aside - search */
+
+footer{
+    clear: both;
+}
+footer > div:first-of-type form fieldset legend{
+    margin-bottom: 40px;
+}
+footer > div:first-of-type form fieldset input{
+    border-bottom: 1px solid rgb(46,46,45);
+    padding: 20px 0;
+}
+footer > div:first-of-type address strong{
+    display: block;
+    margin-bottom: 20px;
+}
+footer > div:first-of-type div h3{
+    margin-bottom: 20px;
+}
+footer > div:first-of-type div span{
+    display: block;
+    padding-left: 20px;
+    background: url('../images/korea.png')left center / contain no-repeat;
+}
+footer > div:last-of-type > div h3{
+    display: block;
+}
+footer > p{
+    display: block;
+    line-height: 80px;
+}
+/* global allUsing */
+
+
+
+@media screen and (max-width: 767px){
+    header.scrollBG{
+        padding: 30px 3.57%;
+    }
+    header.scrollBG h1 a{
+        background: url('../images/logo_black.png') right center / contain no-repeat;
+    }
+    header.scrollBG > div.status > a.hamburger span{
+        border-color: rgb(46,46,45);
+    }
+    header.scrollBG > div.status button:last-child{
+        color: rgb(46,46,45);
+    }
+    header.scrollBG > div.status > a.hamburger span:nth-of-type(1){
+        border-top: 1px solid rgb(46,46,45);
+        
+    }
+    header.scrollBG > div.status > a.hamburger span:nth-of-type(2){
+        border-bottom: 1px solid rgb(46,46,45);
+    }
+    /* header Scroll */
+
+
+    header{
+        padding: 30px 3.57%;
+    }
+    header > h1{
+        width: 27%;
+    }
+    header > nav{
+        display: none;
+    }
+    header > nav ul{
+        line-height: 50px;
+    }
+    header > div.status *:not(.material-icons, .hamburger){
+        display: none;
+    }
+    header > div.status > a.hamburger{
+        position: fixed;
+        right: 3.57%;
+        top: 40px;
+    }
+    header > div.status > button.material-icons{
+        position: fixed;
+        right: 20%;
+        top: 34px;
+    }
+    header > div.status > a.hamburger span{
+        width: 25px;
+        display: block;
+        transition-duration: 1s;
+    }
+    header > div.status > a.hamburger span:nth-of-type(1){
+        border-top: 1px solid rgb(255,255,255);
+        margin-bottom: 10px;
+    }
+    header > div.status > a.hamburger span:nth-of-type(2){
+        border-bottom: 1px solid rgb(255,255,255);
+    }
+    header.onTheTop > div.status > a.hamburger span,
+    header.onTheTop.reverse > div.status > a.hamburger span{
+        border-color: rgb(46,46,45);
+    }
+    header > div.status > span{
+        font-size: 1.3vw;
+        width: 2.4vw;
+        border-radius: 1.2vw;
+        line-height: 2.4vw;
+        margin-left: 1%;
+    }
+
+
+    /* header active */
+    header.active,
+    header.onTheTop.reverse.active{
+        height: 100%;
+        background-color: rgb(255,255,255);
+    }
+    header div.asideContainer{
+        z-index: 1000;
+    }
+    header.active > h1 a{
+        background: url('../images/logo_black.png') right center / contain no-repeat;
+    }
+    header.active > nav{
+        display: block;
+        color: rgb(46,46,45);
+    }
+    header.active > nav ul{
+        margin: 50px 0 150px 0;
+    }
+    header.active > nav ul li a{
+        font-size: 18px;
+    }
+    header.active > nav ul li a:not(.active){
+        color: rgb(164,164,164);
+    }
+    header.active > nav ul li a.active{
+        color: rgb(46,46,45);
+    }
+    header.active > div.status{
+        position: fixed;
+        bottom: 5%;
+        width: 100%;
+    }
+    header.active > div.status button[data-popName="shoppingBag"],
+    header.active > div.status button[data-popName="shoppingBag"] + span{
+        display: inline-block;
+    }
+    header.active > div.status button[data-popName="shoppingBag"] + span{
+        font-size: 11px;
+    }
+    header.active > div.status button.material-icons{
+        color: rgb(46,46,45);
+        text-shadow: none;
+    }
+    header.active > div.status > a.hamburger span{
+        display: block;
+        width: 25px;
+        box-shadow: none;
+    }
+    header.active > div.status > a.hamburger span:nth-of-type(1){
+        border-top: 1px solid rgb(46,46,45);
+        margin-bottom: 10px;
+        transform: rotate(45deg) translateY(8px);
+    }
+    header.active > div.status > a.hamburger span:nth-of-type(2){
+        border-bottom: 1px solid rgb(46,46,45);
+        transform: rotate(-45deg) translateY(-8px);
+    }
+    header.active > div.status *:not(.material-icons, .hamburger){
+        display: block;
+        color: rgb(46,46,45);
+        line-height: 34px;
+    }
+    /* header active */
+
+    
+    header .asideContainer aside.sideBar h2{
+        margin-bottom: 65px;
+    }
+    /* A/U sidebar  */
+
+    header aside:not(#shoppingBag){
+        padding: 35px 3.57%;
+    }
+    header aside:not(#shoppingBag),
+    header aside#shoppingBag fieldset:nth-of-type(2){
+        width: 100%;
+    }
+
+    /* fieldset:nth-of-type(1) */
+    header aside#shoppingBag fieldset:nth-of-type(1){
+        padding: 150px 3.57% 0;
+    }
+    header aside#shoppingBag fieldset#checkoutContainer.active + fieldset{
+        display: none;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(1) legend{
+        top: 150px;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(1) > div{
+        left: 3.57%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer + input{
+        margin-bottom: 30px;
+    }
+    /* fieldset:nth-of-type(1) */
+
+    /* fieldset:nth-of-type(2) */
+    header aside#shoppingBag fieldset:nth-of-type(2){
+        padding: 55px 3.57% 0;
+        overflow-y: scroll;
+        background-color: rgb(255,255,255);
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend{
+        position: fixed;
+        top: 0;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend + ul{
+        margin-top: 20vw;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(2) > label{
+        width: 40%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(2) > input{
+        width: 60%;
+        padding: 0;
+        text-align: right;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(3) label{
+        width: 20%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(3) input{
+        width: 55%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(3) span{
+        width: 25%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2){
+        max-height: 300px;
+        margin-bottom: 30px;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) + input{
+        margin-bottom: 30px;
+    }
+
+
+    #login fieldset ul.inputContainer li.inputList:nth-child(2) input:last-child{
+        width: 20%;
+    }
+
+    #myPage h2{
+        margin: 100px 0 55px;
+    }
+
+    footer{
+        padding: 100px 0 0 0;
+    }
+    footer > div:first-of-type form fieldset input{
+        margin-bottom: 65px;
+    }
+    footer > div:first-of-type address{
+        margin-bottom: 65px;
+    }
+    footer > div:first-of-type address a:first-of-type{
+        margin-bottom: 15px;
+    }
+    footer > div:first-of-type div{
+        margin-bottom: 65px;
+    }
+
+    footer > div:last-of-type > div{
+        padding: 30px 0 10px;
+        border-bottom: 1px solid rgb(46,46,45);
+    }
+    footer > div:last-of-type > div:first-of-type{
+        border-top: 1px solid rgb(46,46,45);
+    }
+
+    footer > div:first-of-type,
+    footer > div:last-of-type > div h3,
+    footer > div:last-of-type > div ul li a,
+    footer p{
+        margin: 0 3.57%;
+    }
+    footer > div:last-of-type > div h3{
+        line-height: 20px;
+        position: relative;
+    }
+    footer > div:last-of-type > div h3::after{
+        content: url('../images/arrow.svg');
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: rotate(-180deg);
+        transition: transform 0.5s ease-in-out;
+        height: 20px;
+    }
+    footer > div:last-of-type > div ul li a{
+        line-height: 34px;
+        color: rgb(164,164,164);
+    }
+
+    /* hoverEvent */
+    footer > div:last-of-type > div h3{
+        margin-bottom: 20px;
+    }
+    footer > div:last-of-type > div h3:hover::after{
+        transform: rotate(0deg);
+    }
+    footer > div:last-of-type > div h3 + ul li a{
+        height: 0;
+        opacity: 0;
+        transition-property: height, opacity, fonts-size;
+        transition-duration: 0.5s, .75s, .1s;
+        font-size: 0;
+    }
+    footer > div:last-of-type > div h3:hover + ul li a{
+        opacity: 1;
+        height: 34px;
+        font-size: 11px;
+    }
+}
+/* mobile */
+
+@media screen and (max-width: 1279px){
+
+    header .asideContainer aside.sideBar form fieldset:not(#shoppingBag fieldset){
+        max-width: 550px;
+        width: 100%;
+        position: relative;
+    }
+    header .asideContainer aside.sideBar fieldset legend input{
+        line-height: 35px;
+    }
+    /* A/U sidebar  */
+
+    /* fieldset:nth-of-type(2) */
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure img{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption a{
+        top: 0;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption button{
+        background: url('../images/delete.png') right / contain no-repeat;
+        text-indent: -9999px;
+        width: 25px;
+        height: 25px;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption dl{
+        padding: 0 0 30px 0;
+    }
+    /* fieldset:nth-of-type(2) */
+}
+/* mobile & tablet Using */
+
+@media screen and (min-width: 768px){
+    header.scrollBG > nav ul li a,
+    header.scrollBG > div.status *{
+        color: rgb(46,46,45);
+    }
+    header.scrollBG > div.status button + span{
+        background-color: rgb(46,46,45);
+        color: rgb(255,255,255);
+    }
+    header.scrollBG > nav ul li:hover a{
+        border-bottom: 1px solid rgb(46,46,45);
+    }
+
+    header > nav ul li:hover a{
+        border-bottom: 1px solid rgba(255,255,255,1);
+        transition-duration: 0.15s;
+    }
+    header.onTheTop > div.status > span{
+        background-color: rgb(46,46,45);
+    }
+    header.onTheTop > nav ul li:hover a,
+    header.onTheTop > nav ul li a.active{
+        border-bottom: 1px solid rgb(46,46,45);
+    }
+    header > div.status a.hamburger{
+        display: none;
+    }
+    header{
+        padding: 55px 2.87%;
+    }
+    header > *:not(aside){
+        float: left;
+    }
+    header > h1{
+        max-width: 119px;
+    }
+    header > nav ul{
+        line-height: 34px;
+    }
+    header > nav ul li{
+        display: inline-block;
+    }
+    header > nav ul li a{
+        border-bottom: 1px solid rgba(255,255,255,0);
+        transition-property: border, opacity;
+        transition-timing-function: ease-in;
+    }
+    header > div.status{
+        text-align: right;
+        box-sizing: border-box;
+    }
+    header > div.status > *{
+        line-height: 34px; display: inline-block;
+    }
+    header > div.status button:last-child{
+        vertical-align: -31%;
+        /* font-size: 27px; */
+    }
+    header .asideContainer aside.sideBar{
+        border-left: 1px solid rgb(238,238,238);
+    }
+    header .asideContainer aside.sideBar h2{
+        margin-bottom: 185px;
+    }
+    /* A/U sidebar  */
+
+    header aside:not(#shoppingBag){
+        padding: 65px 55px 0 6.25%;
+    }
+
+    /* fieldset:nth-of-type(1) */
+    header aside#shoppingBag fieldset:nth-of-type(1){
+        padding: 230px 10% 0 2.87%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(1) legend{
+        top: 230px;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(1) ul.inputContainer + input{
+        margin-bottom: 100px;
+    }
+    /* fieldset:nth-of-type(1) */
+
+    /* fieldset:nth-of-type(2) */
+    header aside#shoppingBag fieldset:nth-of-type(2){
+        position: fixed; right: 0; top: 0;
+        padding: 55px 55px 0 6.25%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(2) > input{
+        width: 50%;
+        padding: 0;
+        text-align: right;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(3) label{
+        width: 30%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(3) input{
+        width: 53%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) legend + ul li:nth-child(3) span{
+        width: 17%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2){
+        max-height: 350px;
+        margin-bottom: 80px;
+    }
+
+    #login fieldset ul.inputContainer li.inputList:nth-child(2) input:last-child{
+        width: 15%;
+    }
+    #myPage h2{
+        margin: 200px 0 55px;
+    }
+    /* aside - myPage */
+
+
+    footer{
+        padding: 100px 2.87% 0 2.87%;
+    }
+    footer > div:first-of-type{
+        border-bottom: 1px solid rgb(46,46,45);
+    }
+    footer > div:first-of-type > *:not(:first-child),
+    footer > div:first-of-type form fieldset{
+        float: left;
+    }
+    footer > div:first-of-type form fieldset{
+        width: 25%;
+    }
+    footer > div:first-of-type form fieldset input{
+        margin-bottom: 145px;
+    }
+    footer > div:first-of-type address a{
+        display: inline-block;
+    }
+    footer > div:first-of-type address a:first-of-type{
+        padding-right: 20px;
+    }
+    footer > div:first-of-type address a:last-of-type{
+        padding-left: 20px;
+        border-left: 1px solid rgb(46,46,45);
+        margin-right: 10%;
+    }
+    footer > div:first-of-type div{
+        width: 25%;
+    }
+    footer > div:last-of-type{
+        padding-top: 100px;
+
+    }
+    footer > div:last-of-type > div{
+        float: left;
+        width: 25%;
+    }
+    footer > div:last-of-type > div h3{
+        margin-bottom: 25px;
+    }
+    footer > div:last-of-type > div ul li a{
+        line-height: 31px;
+    }
+    footer > p{
+        margin-top: 70px;
+        border-top: 1px solid rgb(46,46,45);
+    }
+}
+/* tablet & desktop*/
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    header > h1{
+        width: 10%;
+    }
+    header > nav{
+        width: 44%;
+        margin-left: 3%;
+    }
+    header > nav ul li:not(:first-child){
+        margin-left: 7%;
+    }
+    header > div.status{
+        width: 43%;
+    }
+    /* header > div.status > *:not(:first-child, span) */
+    header > div.status > button:not(:first-of-type),
+    header > div.status > a.pass{
+        margin-left: 3%;
+    }
+    header > div.status > span{
+        font-size: 1.3vw;
+        width: 2.4vw;
+        border-radius: 1.2vw;
+        line-height: 2.4vw;
+        margin-left: 1%;
+    }
+    /* A/U sidebar  */
+
+    header aside:not(#shoppingBag),
+    header aside#shoppingBag fieldset:nth-of-type(2){
+        width: 50%;
+    }
+    header aside#shoppingBag{
+        padding-right: 50%;
+    }
+
+    /* fieldset:nth-of-type(1) */
+    header aside#shoppingBag fieldset:nth-of-type(1) > div{
+        right: 55%;
+    }
+    /* fieldset:nth-of-type(1) */
+
+    /* fieldset:nth-of-type(2) */
+    footer > div:first-of-type address{
+        width: 50%;
+        padding-left: 5%;
+        box-sizing: border-box;
+    }
+}
+/* tablet allUsing (portrait) */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
+    header aside#shoppingBag fieldset:nth-of-type(1) ul{
+        margin-bottom: 5vw;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(1) ul{
+        height: 35vw;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2){
+        height: 25vw;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(1) ul,
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2){
+        overflow-y: scroll;
+    }
+}
+/* tablet landscape */
+
+@media screen and (min-width: 1280px){
+    header > h1{
+        width: 9%;
+    }
+    header > nav{
+        width: 45.71%;
+        margin-left: 6.54%;
+    }
+    header > nav ul li:not(:first-child){
+        margin-left: 14.5%;
+    }
+    header > div.status{
+        width: 38.75%;
+    }
+    header > div.status > *:not(:first-child, span){
+        margin-left: 4.5%;
+    }
+    header > div.status > span{
+        font-size: 10px;
+        width: 22px;
+        border-radius: 13px;
+        line-height: 22px;
+        margin-left: 10px;
+    }
+
+
+    header .asideContainer aside.sideBar form fieldset:not(#shoppingBag fieldset){
+        max-width: 550px;
+        width: 100%;
+        position: relative;
+    }
+    header .asideContainer aside.sideBar fieldset legend input{
+        border-bottom: 1px solid rgb(46,46,45);
+    }
+    /* A/U sidebar  */
+
+    header aside:not(#shoppingBag),
+    header aside#shoppingBag fieldset:nth-of-type(2){
+        width: 42.44%;
+    }
+    header aside#shoppingBag{
+        padding-right: 42.44%;
+    }
+
+    /* fieldset:nth-of-type(1) */
+    header aside#shoppingBag fieldset:nth-of-type(1) > div{
+        right: 50%;
+    }
+    /* fieldset:nth-of-type(1) */
+
+    /* fieldset:nth-of-type(2) */
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure img{
+        max-width: 117px;
+        float: left;
+        width: 40%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption{
+        float: left;
+        width: 57%;
+        margin-left: 3%;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption a{
+        left: 0;
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption button{
+        border-bottom: 1px solid rgb(46,46,45);
+    }
+    header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption dl{
+        padding: 50px 0;
+    }
+
+    footer > div:first-of-type address{
+        width: 30%;
+        padding-left: 20%;
+    }
+}
+/* pc */
