@@ -827,6 +827,7 @@ section.etcContainer.etcMyPage fieldset ul.inputContainer.myAddress + a{
     section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(1),
     section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(2){
         width: 100%;
+        height: 500px;
     }
     section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(2){
         margin-left: 0;
