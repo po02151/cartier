@@ -551,13 +551,8 @@ section.etcContainer.etcMyPage div.inputBox + .btnConfirm{
     max-width: 550px;
     margin-bottom: 60px;
 }
-section.etcContainer.etcMyPage div.wishBox > a{
-    float: left;
-    margin-bottom: 100px;
-}
 section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(1),
 section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(2){
-    width: 49%;
     height: 366px;
     background-position: center;
     background-size: cover;
@@ -568,7 +563,6 @@ section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(1){
 }
 section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(2){
     background-image: url('../images/list_watch1.png');
-    margin-left: 2%;
 }
 section.etcContainer.etcMyPage fieldset ul.inputContainer li.inputList:not(.nonEffect){
     border-bottom: 1px solid rgb(46,46,45);
@@ -818,6 +812,7 @@ section.etcContainer.etcMyPage fieldset ul.inputContainer.myAddress + a{
     section.etcContainer > ul{
         max-width: 730px;
     }
+
     section.etcContainer.etcContactUs fieldset ul.inputContainer li:nth-child(5) textarea{
         padding: 15px;
     }
@@ -825,6 +820,18 @@ section.etcContainer.etcMyPage fieldset ul.inputContainer.myAddress + a{
         left: 15px;
     }
     /* etc Contact Us */
+
+    section.etcContainer.etcMyPage div.wishBox > a{
+        margin-bottom: 50px;
+    }
+    section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(1),
+    section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(2){
+        width: 100%;
+    }
+    section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(2){
+        margin-left: 0;
+    }
+    /* myPage - wishList */
 
     /* table */
     section.etcContainer > ul > li ol li table{
@@ -993,6 +1000,19 @@ section.etcContainer.etcMyPage fieldset ul.inputContainer.myAddress + a{
         left: 20px;
     }
     /* etc Contact Us */
+
+    section.etcContainer.etcMyPage div.wishBox > a{
+        float: left;
+        margin-bottom: 100px;
+    }
+    section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(1),
+    section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(2){
+        width: 49%;
+    }
+    section.etcContainer.etcMyPage div.wishBox > a:nth-of-type(2){
+        margin-left: 2%;
+    }
+    /* myPage - wishList */
     
     /* table */
     section.etcContainer > ul > li ol li table{
