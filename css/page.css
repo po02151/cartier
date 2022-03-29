@@ -758,7 +758,7 @@ section.etcContainer.etcMyPage fieldset ul.inputContainer.myAddress + a{
     #explanation.active,
     #shippingNreturn.active,
     #assist.active{
-        padding: 300px 5% 30px;
+        padding: 320px 5% 30px;
         height: 100%;
         overflow-y: scroll;
     }
