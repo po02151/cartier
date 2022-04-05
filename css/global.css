@@ -749,7 +749,7 @@ footer > div:first-of-type div h3{
 footer > div:first-of-type div span{
     display: block;
     padding-left: 20px;
-    background: url('../images/korea.png')left center / contain no-repeat;
+    background: url('../images/korea.png') left center / contain no-repeat;
 }
 footer > div:last-of-type > div h3{
     display: block;
