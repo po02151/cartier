@@ -778,6 +778,10 @@ section.etcContainer.etcContactUs fieldset ul.inputContainer li:nth-child(5) > l
     header.scrollBG h1 a{
         background: url('../images/logo_black.png') right center / contain no-repeat;
     }
+    header.scrollBG > div.status > button.hamburger{
+        background-color: transparent !important; border: none !important;
+        box-shadow: none !important;
+    }
     header.scrollBG > div.status > button.hamburger span{
         border-color: rgb(46,46,45);
     }
