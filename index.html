@@ -211,17 +211,17 @@
                                         </dl>
                                         <ul class="outputContainer">
                                             <li class="selectList">
-                                                <select>
+                                                <select title="sizeSelectBox">
                                                     <option value="47">47 size</option>
                                                 </select>
                                             </li>
                                             <li class="selectList">
-                                                <select>
+                                                <select title="qtySelectBox">
                                                     <option value="Qty1">Qty 1</option>
                                                 </select>
                                             </li>
                                             <li class="inputList">
-                                                <input type="text" id="productPrice1" value="1 130 000" readonly><span>KRW</span>
+                                                <input type="text" id="productPrice1" value="1 130 000" readonly title="productPrice"><span>KRW</span>
                                             </li>
                                         </ul>
                                     </figcaption>
@@ -239,17 +239,17 @@
                                         </dl>
                                         <ul class="outputContainer">
                                             <li class="selectList">
-                                                <select name="sizeSelect">
+                                                <select title="oneSizeSelect">
                                                     <option value="oneSize">One size</option>
                                                 </select>
                                             </li>
                                             <li class="selectList">
-                                                <select name="qtySelect">
+                                                <select title="qtySelectBox">
                                                     <option value="Qty1">Qty 1</option>
                                                 </select>
                                             </li>
                                             <li class="inputList">
-                                                <input type="text" id="productPrice2" value="8 650 000" readonly><span>KRW</span>
+                                                <input type="text" id="productPrice2" value="8 650 000" readonly title="productPrice"><span>KRW</span>
                                             </li>
                                         </ul>
                                     </figcaption>
@@ -269,7 +269,7 @@
                 </h2>
                 <form>
                     <fieldset>
-                        <input type="search" id="searchBar" placeholder="Search here..." list="searchFilter">
+                        <input type="search" id="searchBar" placeholder="Search here..." list="searchFilter" title="searchField">
                         <datalist id="searchFilter">
                             <option value="Ring">Ring</option>
                             <option value="Bracelet">Bracelet</option>
@@ -303,10 +303,10 @@
             </ul>
         </nav>
         <div class="status signIn">
-            <a href="#" class="hamburger">
+            <button class="hamburger" title="mobileUserInterface">
                 <span></span>
                 <span></span>
-            </a>
+            </button>
             <button class="sideOpen hold" data-popName="login">My Account</button>
             <button class="pass material-icons hold" data-popName="search">search</button>
         </div>
