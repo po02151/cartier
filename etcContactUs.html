@@ -336,15 +336,15 @@
                 <ul class="inputContainer">
                     <li class="inputList">
                         <input type="text" title="First name" class="customInput" id="etcFirstName" required>
-                        <label for="firstName">First name</label>
+                        <label for="etcFirstName">First name</label>
                     </li>
                     <li class="inputList">
                         <input type="text" title="Last name" class="customInput" id="etcLastName" required>
-                        <label for="lastName">Last name</label>
+                        <label for="etcLastName">Last name</label>
                     </li>
                     <li class="inputList">
                         <input type="text" title="user email" class="customInput" id="etcUserEmail">
-                        <label for="userEmail">Email</label>
+                        <label for="etcUserEmail">Email</label>
                     </li>
                     <li> 
                         <label for="contactSelect">Topic</label>
@@ -362,8 +362,13 @@
                         </div>
                     </li>
                     <li>
+                        <label for="maximum">textarea</label>
                         <textarea required placeholder="Type here (if your enquiry is about an order, do not forget to include its number)" maxlength="400" id="maximum" onkeydown="calc()" onkeyup="calc()" onkeypress="calc()"></textarea>
-                        <span><input type="text" id="count" value="0" readonly>/ 400 character(s) left</span>
+                        <span>
+                            <label for="count"></label>
+                            <input type="text" id="count" value="0" readonly title="text count">
+                            / 400 character(s) left
+                        </span>
                     </li>
                 </ul>
                 <input type="submit" value="SEND" class="btnContactUs">
