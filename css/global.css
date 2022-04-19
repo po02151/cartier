@@ -764,7 +764,12 @@ footer > p{
 header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption a{
     text-indent: -9999px;
 }
-/* 접근성 */
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul li.inputList label,
+header aside#shoppingBag fieldset:nth-of-type(2) ul:nth-of-type(2) li figure figcaption ul li.selectList label,
+#search fieldset #searchBar + label,
+#Newsletter + label{
+    display: none;
+}
 
 
 

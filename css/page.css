@@ -153,6 +153,9 @@ section.detail > div:nth-of-type(2) input{
     margin-bottom: 80px;
     padding: 0;
 }
+section.detail > div:nth-of-type(2) input + label{
+    display: none;
+}
 section.detail > div:nth-of-type(2) + button.detailAddBtn{
     display: block;
     font-size: 12px;
@@ -624,6 +627,8 @@ section.etcContainer.etcMyPage fieldset ul.inputContainer.myAddress + a{
 }
 /* etc Pages */
 /* allUsing */
+
+
 
 @media screen and (max-width: 767px){
     section.mainContainer ul:first-of-type li a{
