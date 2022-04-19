@@ -28,7 +28,6 @@ $(document).ready(function(){
     listImgUp(watchList, watchName);
 
 
-    // mobileFooterAccordion();
     mobileHamburger();
 
 
@@ -174,20 +173,6 @@ function listImgUp(target,listName){
         currentList.css("background-image",'url("' + imageUrl + '")');
     }
 }
-/*
-    listImgUP 함수
-
-    target에서 list 자체를 넘겨받고, listName img 파일명의 공통부를 전달받아.
-    list 자체의 길이만큼 반복을 수행. 
-    i = 0 일때 1번 list 를 처리.
-    imageUrl = path를 완성 "images/list_ring1.png";
-    eq가 i번째 대상.
-    currentList = 1번 list.
-    그러니까 1번list한테 css 함수로 background-image를 삽입.
-
-    추가적으로 변수 2개만 계속 생성해내면, 무한으로 사용가능.
-*/
-
 
 function heartBtn(){
     var whiteHeart = $('.productPhoto').find('button');
@@ -197,18 +182,6 @@ function heartBtn(){
 }
 
 
-
-// function mobileFooterAccordion(){
-//     $('footer').find('ul').hide();
-//     $('footer div h3').click(function(){
-//         $(this).toggleClass('active');
-//         $(this).nextAll('ul').slideToggle('fast');
-//         $(this).parent().siblings('div').children('ul').slideUp('fast')
-//             .parent('div').find('h3').removeClass('active');
-//         return false;
-        
-//     })
-// }
 
 function mobileHamburger(){
     var moblieMenuBtn = $('.hamburger');
@@ -247,17 +220,6 @@ function scrollHeaderBG(){
 // scroll Header BG
 
 
-// $(function(){
-//     $(window).scroll(function(){
-//         var navBar = $(this).scrollTop();
-//         var $header = $('header');
-//         if(navBar > 55){
-//             $header.addClass('scrollBG');
-//         }else{
-//             $header.removeClass('scrollBG');
-//         }
-//     })
-// })
 
 
 function mobileEtcSideBar(){
